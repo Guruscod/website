@@ -1,85 +1,71 @@
-body {
-    font-family: 'Arial', sans-serif;
-}
-
-.navbar-brand {
-    font-weight: bold;
-    color: #d00 !important;
-}
-
-.navbar-nav .nav-link {
-    color: white !important;
-    font-weight: bold;
-}
-
-.navbar-nav .nav-link.active {
-    background-color: #ffcc00;
-    color: #d00 !important;
-}
+body { font-family: 'Arial', sans-serif; }
 
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-                url('https://media.cnn.com/api/v1/images/stellar/prod/180508141319-03-amazing-places-africa-victoria-falls.jpg?q=w_3080,h_1732,x_0,y_0,c_fill') center/cover no-repeat;
-    height: 80vh;
-    color: white;
-    display: flex;
-    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('https://media.istockphoto.com/id/1237462133/photo/victoria-falls.jpg?s=612x612&w=0&k=20&c=CkNgjOmmo9zxD8ytPQ_hiPR2HWqBkzNqNdNPh3vrtf4=') center/cover no-repeat;
+    min-height: 90vh;
+    background-attachment: fixed;
 }
 
 .hero h1 {
-    font-size: 3.5rem;
-    color: #d00;
-    text-shadow: 2px 2px 8px black;
+    font-size: 4.5rem;
+    text-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+    color: #fff;
 }
 
 .search-form {
-    background: white;
-    color: black;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    background: rgba(255,255,255,0.95);
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
 }
 
 .search-form .btn-primary {
     background: #d00;
     border: none;
+    font-weight: bold;
+}
+
+.tour-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tour-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2) !important;
 }
 
 .card-img-top {
-    height: 200px;
+    height: 220px;
     object-fit: cover;
 }
 
 .chat-bubble {
     position: fixed;
-    bottom: 20px;
-    left: 20px;
+    bottom: 25px;
+    left: 25px;
     background: #d00;
     color: white;
-    padding: 15px 20px;
+    padding: 15px 25px;
     border-radius: 50px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
     z-index: 1000;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-weight: bold;
 }
 
 .chat-bubble:hover {
     background: #b00000;
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .social-icons a {
-    font-size: 30px;
-    margin: 0 15px;
-    color: #333;
+    margin: 0 20px;
+    color: #666;
     transition: color 0.3s;
 }
 
 .social-icons a:hover {
     color: #d00;
-}
-
-footer {
-    background: #f8f9fa;
 }
