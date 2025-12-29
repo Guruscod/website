@@ -2,7 +2,7 @@ body { font-family: 'Arial', sans-serif; }
 
 .hero {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-                url('https://images.pexels.com/photos/1659438/pexels-photo-1659438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/cover no-repeat;
+                url('https://media.istockphoto.com/id/1081365424/photo/aerial-view-of-famous-victoria-falls-zimbabwe-and-zambia.jpg?s=612x612&w=0&k=20&c=-w7lj9taR2qyenSo_zjNQCacXZkXmKKhg0u7LjKpZqQ=') center/cover no-repeat;
     min-height: 95vh;
     background-attachment: fixed;
 }
