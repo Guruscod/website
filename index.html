@@ -55,19 +55,35 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero text-center text-white">
-        <div class="container h-100 d-flex flex-column justify-content-center">
-            <h1 class="display-3 fw-bold mb-4">Book with Ease,<br>Travel in Africa</h1>
-            <div class="search-form mx-auto mt-5 p-4">
+    <!-- Enhanced Hero Section -->
+    <section class="hero text-center text-white" id="hero">
+        <div class="container h-100 d-flex flex-column justify-content-center align-items-center">
+            <h1 class="display-2 fw-bold mb-4">Book with Ease,<br>Travel in Africa</h1>
+            <p class="lead mb-5 fs-4">Discover curated tours, flights, and experiences across the continent</p>
+            
+            <div class="search-form mx-auto p-5 rounded-4">
                 <form id="searchForm">
-                    <div class="row g-3">
-                        <div class="col-md-3"><input type="text" class="form-control form-control-lg" placeholder="Origin (e.g., Accra)" required></div>
-                        <div class="col-md-3"><input type="text" class="form-control form-control-lg" placeholder="Destination (e.g., Kigali)" required></div>
-                        <div class="col-md-2"><input type="date" class="form-control form-control-lg" required></div>
-                        <div class="col-md-2"><input type="date" class="form-control form-control-lg" required></div>
-                        <div class="col-md-1"><select class="form-select form-select-lg"><option>1</option><option>2</option><option>3+</option></select></div>
-                        <div class="col-md-1"><button type="submit" class="btn btn-lg btn-primary w-100">GO</button></div>
+                    <div class="row g-3 align-items-center">
+                        <div class="col-md-3">
+                            <input type="text" class="form-control form-control-lg" placeholder="From (e.g., Accra)" required>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control form-control-lg" placeholder="To (e.g., Kigali)" required>
+                        </div>
+                        <div class="col-md-2">
+                            <input type="date" class="form-control form-control-lg" required>
+                        </div>
+                        <div class="col-md-2">
+                            <input type="date" class="form-control form-control-lg" required>
+                        </div>
+                        <div class="col-md-1">
+                            <select class="form-select form-select-lg">
+                                <option>1</option><option>2</option><option>3+</option>
+                            </select>
+                        </div>
+                        <div class="col-md-1">
+                            <button type="submit" class="btn btn-lg btn-primary w-100 fw-bold">GO</button>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -77,13 +93,13 @@
     <!-- About -->
     <section class="py-5" id="about">
         <div class="container text-center">
-            <h2 class="mb-4">About Ben-Trinatt Travel and Tour Limited</h2>
+            <h2 class="mb-4 fw-bold">About Ben-Trinatt Travel and Tour Limited</h2>
             <p class="lead col-md-8 mx-auto">We are a leading Ghana-based travel agency specializing in curated tours, flights, hotels, and activities across West and East Africa. With event partnerships like conferences in Kigali, we deliver seamless African travel experiences.</p>
             <p class="fw-bold">Address: 6, 6th Link, Volta Lane, Accra, Ghana</p>
         </div>
     </section>
 
-    <!-- Featured Tours -->
+    <!-- Featured Tours (same as before) -->
     <section class="py-5 bg-light" id="tours">
         <div class="container">
             <h2 class="text-center mb-5 fw-bold">Featured Tours</h2>
@@ -122,7 +138,7 @@
         </div>
     </section>
 
-    <!-- Social & Contact (same as before, slightly improved spacing) -->
+    <!-- Social Section -->
     <section class="py-5 text-center">
         <h3 class="fw-bold">WE ARE SOCIAL</h3>
         <p class="lead">Join in on the fun and share your experiences</p>
@@ -136,23 +152,48 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section class="py-5 bg-light" id="contact">
         <div class="container">
-            <h2 class="text-center mb-5 fw-bold">Contact Us</h2>
+            <h2 class="text-center mb-5 fw-bold">Get in Touch</h2>
             <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <form id="contactForm">
-                        <div class="mb-3"><input type="text" class="form-control form-control-lg" placeholder="Your Name" required></div>
-                        <div class="mb-3"><input type="email" class="form-control form-control-lg" placeholder="Your Email" required></div>
-                        <div class="mb-3"><textarea class="form-control form-control-lg" rows="5" placeholder="Message" required></textarea></div>
-                        <button type="submit" class="btn btn-danger btn-lg">Send Message</button>
-                    </form>
+                <div class="col-md-7">
+                    <div class="card shadow">
+                        <div class="card-body p-5">
+                            <form id="contactForm">
+                                <div class="mb-4">
+                                    <input type="text" class="form-control form-control-lg" placeholder="Your Full Name" required>
+                                </div>
+                                <div class="mb-4">
+                                    <input type="email" class="form-control form-control-lg" placeholder="Your Email Address" required>
+                                </div>
+                                <div class="mb-4">
+                                    <input type="tel" class="form-control form-control-lg" placeholder="Phone Number (Optional)">
+                                </div>
+                                <div class="mb-4">
+                                    <textarea class="form-control form-control-lg" rows="6" placeholder="Tell us about your travel plans..." required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-danger btn-lg w-100 fw-bold">Send Your Inquiry</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Chat Bubble -->
+    <div class="chat-bubble" id="chatBubble">
+        <i class="fas fa-comment fa-lg"></i> Need Help? Chat with us
+    </div>
+
+        <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/233274226334?text=Hi%2C%20I'm%20interested%20in%20your%20travel%20services%21%20Can%20you%20help%20me%20plan%20a%20trip%3F" 
+       class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp fa-2x"></i>
+    </a>
+
+    <!-- Chat Bubble (still bottom-left) -->
     <div class="chat-bubble" id="chatBubble">
         <i class="fas fa-comment fa-lg"></i> Need Help? Chat with us
     </div>

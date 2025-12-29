@@ -1,17 +1,19 @@
-// Search form feedback
+// "GO" button scrolls smoothly to Contact section
 document.getElementById('searchForm').addEventListener('submit', function(e) {
     e.preventDefault();
-    alert('Thank you! We will help you plan your trip to Africa. Contact us for details.');
+    document.querySelector('#contact').scrollIntoView({
+        behavior: 'smooth'
+    });
 });
 
-// Contact form feedback
+// Contact form submission
 document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
-    alert('Message sent! We will get back to you shortly.');
+    alert('Thank you! Your inquiry has been sent. We will contact you shortly.');
     this.reset();
 });
 
-// Chat bubble click
+// Chat bubble
 document.getElementById('chatBubble').addEventListener('click', function() {
-    alert('Chat support coming soon!\nCall us at +233 27 422 6334 or +250 738 318 820');
+    document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
 });
